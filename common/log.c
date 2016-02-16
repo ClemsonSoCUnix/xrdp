@@ -376,7 +376,7 @@ internal_config_read_logging(int file, struct log_config *lc,
 
     if (0 == lc->log_file)
     {
-        lc->log_file = g_strdup("./sesman.log");
+        lc->log_file = g_strdup(XRDP_LOG_PATH "sesman.log");
     }
 
     /* try to create path if not exist */
